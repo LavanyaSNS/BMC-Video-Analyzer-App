@@ -56,7 +56,7 @@ def get_video_info(video_url):
         title = title.replace('|', '').strip()
         return title
 
-def download_video(video_url, output_path="video.mp4.mkv"):
+def download_video(video_url, output_path="C:\\Users\\HP\\Desktop\\streamlit\\video.mp4.mkv"):
     ydl_opts = {
         'format': 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4',
         'outtmpl': output_path,
