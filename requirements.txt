@@ -9,7 +9,8 @@ webrtcvad
 easyocr
 groq
 opencv-python-headless
-git+https://github.com/openai/whisper.git
+# git+https://github.com/openai/whisper.git
+
 ngrok
 -U yt-dlp
 streamlit
