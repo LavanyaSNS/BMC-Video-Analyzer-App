@@ -1,4 +1,4 @@
-yt-dlp
+yt-dlp==2023.10.07  # Specify a stable version if needed
 whisper
 transformers
 accelerate
@@ -9,8 +9,6 @@ webrtcvad
 easyocr
 groq
 opencv-python-headless
-# git+https://github.com/openai/whisper.git
-
+git+https://github.com/openai/whisper.git
 ngrok
--U yt-dlp
 streamlit
