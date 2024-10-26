@@ -12,3 +12,4 @@ opencv-python-headless
 git+https://github.com/openai/whisper.git
 ngrok
 streamlit
+librosa
