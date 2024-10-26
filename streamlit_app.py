@@ -1,4 +1,21 @@
-#%%writefile bmc_video_analysis.py
+import os
+import urllib.request
+
+def download_yolo():
+    if not os.path.exists("yolov3.cfg"):
+        urllib.request.urlretrieve(
+            "https://raw.githubusercontent.com/pjreddie/darknet/master/cfg/yolov3.cfg",
+            "yolov3.cfg"
+        )
+    if not os.path.exists("yolov3.weights"):
+        urllib.request.urlretrieve(
+            "https://pjreddie.com/media/files/yolov3.weights",
+            "yolov3.weights"
+        )
+
+download_yolo()
+
+
 import yt_dlp
 import subprocess
 import os
